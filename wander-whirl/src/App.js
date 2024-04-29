@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './index.css';
+// import './reset.css';
 
-function App() {
+
+function App(){
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        <a className="navbar-brand" href="#">WanderWhirl</a>
+        <button className="navbar-toggler" type="button" onClick={toggleMenu}>
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="#">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Destinations</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div className="container">
+      <h1 className="mt-5"> Wander Whirl</h1>
+      <p> Welcome to Wander Whirl! </p>
+      <p> This is a travel blog where you log your travel destinations. </p>
+      <button className="btn btn-primary">Get Started</button>
+    </div>
     </div>
   );
 }
