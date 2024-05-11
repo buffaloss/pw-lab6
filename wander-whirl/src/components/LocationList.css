@@ -3,6 +3,11 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
   }
+
+  .location-list.dark {
+    background-color: #021124;
+    color: #D8C3A5;
+  }
   
   .location-item {
     background-color: none; 
@@ -14,10 +19,21 @@
     overflow: hidden; 
   }
 
+  .location-item.dark {
+    background-color: #021124; 
+    border: 2px solid #E85A4F; 
+    box-shadow: 7px 7px 7px #e8594f60;
+    color: #D8C3A5; 
+  }
+
   h6{
     font-weight: 600;
   }
   
   .description {
     font-weight: 600;
+  }
+
+  .description.dark {
+    color: #D8C3A5;
   }

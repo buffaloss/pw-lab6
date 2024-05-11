@@ -18,7 +18,6 @@ function App() {
 
   return (
     <ThemeProvider>
-    <div>
       <Logo/>
       <Header onShowForm={() => setShowForm(true)}/>
       {showForm && (
@@ -30,8 +29,6 @@ function App() {
       <Locations locations={locations} />
 
       <ToggleButton/>
-
-    </div>
     </ThemeProvider>
   );
 }
