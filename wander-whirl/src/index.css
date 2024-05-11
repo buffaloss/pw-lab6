@@ -5,30 +5,6 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: #EAE7DC;
+  margin-bottom: 15%;
 }
-
-/* nav {
-  background-color: #03045E;
-}
-
-.navbar-nav .nav-item .nav-link {
-  color:white;
-  padding-left: 2em;
-  padding-right:2em;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-  color: #CAF0F8;
-  font-weight: 600;
-}
-
-.navbar-brand {
-  color: white;
-  font-size: 3em;
-  font-weight:600;
-}
-
-.navbar-brand:hover {
-  color: #CAF0F8;
-}
- */
