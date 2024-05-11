@@ -6,7 +6,7 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    color: black;
+    color: #E98074;
   }
   
   .intro-content h2 {
@@ -27,11 +27,14 @@
   }
   
   .btn {
-    background-color: rgb(196, 190, 190);
+    background-color: #E85A4F;
+    color: #EAE7DC;
+    font-weight: 600;
   }
   
   .btn:hover {
-    background-color: rgb(124, 124, 124);
+    background-color: #e94135;
+    color: #EAE7DC;
   }
   
 h3 {

@@ -1,5 +1,5 @@
-import React from 'react';
-import './LocationList.css';
+import React from "react";
+import "./LocationList.css";
 
 function LocationList({ locations }) {
   return (
@@ -7,10 +7,12 @@ function LocationList({ locations }) {
       {locations.map((location, index) => (
         <div key={index} className="location-item">
           <h3>{location.name}</h3>
-          <p>Description: {location.description}</p>
-          <p>Rating: {location.rating}</p>
+          <h6>Rating: {location.rating} out of 5</h6>
+          <div className="description">Description:</div>
+          <p>{location.description}</p>
         </div>
       ))}
+
     </div>
   );
 }
