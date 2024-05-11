@@ -1,6 +1,7 @@
 // LocationForm.js
 import React, { useState } from 'react';
 import "./LocationForm.css";
+import { useTheme } from "../ThemeContext";
 
 function LocationForm({ onSubmit, onClose }) {
   const [locationData, setLocationData] = useState({
@@ -27,12 +28,15 @@ function LocationForm({ onSubmit, onClose }) {
     });
     onClose();
   };
+
+  const { theme } = useTheme();
+
   return (
-    <div className="popup">
-      <div className="popup-content">
+    <div className={`popup ${theme === 'dark' ? 'dark' : ''}`}>
+      <div className={`popup-content ${theme === 'dark' ? 'dark' : ''}`}>
         <span className="close" onClick={onClose}>&times;</span>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
+        <form className={`popup-content ${theme === 'dark' ? 'dark' : ''}`} onSubmit={handleSubmit}>
+          <div className={`form-group ${theme === 'dark' ? 'dark' : ''}`}>
             <label htmlFor="locationName">Location Name:</label>
             <input
               type="text"
@@ -41,9 +45,10 @@ function LocationForm({ onSubmit, onClose }) {
               value={locationData.name}
               onChange={handleChange}
               required
+              className={`${theme === 'dark' ? 'dark' : ''}`}
             />
           </div>
-          <div className="form-group">
+          <div className={`form-group ${theme === 'dark' ? 'dark' : ''}`}>
             <label htmlFor="description">Description:</label>
             <textarea
               id="description"
@@ -51,9 +56,10 @@ function LocationForm({ onSubmit, onClose }) {
               value={locationData.description}
               onChange={handleChange}
               required
+              className={`${theme === 'dark' ? 'dark' : ''}`}
             />
           </div>
-          <div className="form-group">
+          <div className={`form-group ${theme === 'dark' ? 'dark' : ''}`}>
             <label htmlFor="rating">Rating:</label>
             <input
               type="number"
@@ -65,10 +71,11 @@ function LocationForm({ onSubmit, onClose }) {
               max="5"
               step="0.5"
               required
+              className={`${theme === 'dark' ? 'dark' : ''}`}
             />
           </div>
-          <div className="form-group">
-            <button className="submit-btn" type="submit">Submit</button>
+          <div className={`form-group ${theme === 'dark' ? 'dark' : ''}`}>
+            <button className={`submit-btn ${theme === 'dark' ? 'dark' : ''}`} type="submit">Submit</button>
           </div>
         </form>
       </div>

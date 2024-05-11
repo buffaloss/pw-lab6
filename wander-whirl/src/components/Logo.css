@@ -1,4 +1,12 @@
+div {
+  background-color: #eae7dc;
+}
+
+div.dark {
+  background-color: #021124 ;
+}
+
 img {
-    width: 15%;
-    min-width: 200px;
+  width: 35%;
+  min-width: 200px;
 }

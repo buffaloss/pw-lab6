@@ -4,6 +4,8 @@ import Logo from "./components/Logo";
 import Header from "./components/Header";
 import Locations from "./components/Locations";
 import LocationForm from "./components/LocationForm";
+import { ThemeProvider, useTheme } from "./ThemeContext";
+import ToggleButton from "./components/ToggleButton";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
@@ -15,6 +17,7 @@ function App() {
   };
 
   return (
+    <ThemeProvider>
     <div>
       <Logo/>
       <Header onShowForm={() => setShowForm(true)}/>
@@ -25,7 +28,11 @@ function App() {
         />
       )}
       <Locations locations={locations} />
+
+      <ToggleButton/>
+
     </div>
+    </ThemeProvider>
   );
 }
 
