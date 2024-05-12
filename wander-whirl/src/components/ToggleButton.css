@@ -1,32 +1,32 @@
 .btn-container {
-    display: flex;
-    justify-content: center;
-    padding: 0% 3% 3% 3%;
+  display: flex;
+  justify-content: center;
+  padding: 0% 3% 3% 3%;
 }
 
 .theme-btn {
-    background-color: #EAE7DC;
-    border: 3px solid #E85A4F;
-    border-radius: 5px;
-    padding:0.3em 1.1em;
-    color: #E85A4F;
-    font-weight: 600;
-  }
+  background-color: #eae7dc;
+  border: 3px solid #e85a4f;
+  border-radius: 5px;
+  padding: 0.3em 1.1em;
+  color: #e85a4f;
+  font-weight: 600;
+}
 
-  .theme-btn.dark {
-    background-color: #021124;
-    color: #e94135;
-  }
-  
-  .theme-btn:hover {
-    background-color: #EAE7DC;
-    color: #e94135;
-    border-color: #e94135;
-    border-width: 3.5px;
-    font-weight: 800;
-  }
+.theme-btn.dark {
+  background-color: #021124;
+  color: #e94135;
+}
 
-  .theme-btn.dark:hover{
-    background-color: #021124;
-    color: #e94135;
-  }
+.theme-btn:hover {
+  background-color: #eae7dc;
+  color: #e94135;
+  border-color: #e94135;
+  border-width: 3.5px;
+  font-weight: 800;
+}
+
+.theme-btn.dark:hover {
+  background-color: #021124;
+  color: #e94135;
+}

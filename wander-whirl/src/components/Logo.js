@@ -8,15 +8,17 @@ function Logo() {
   const { theme } = useTheme();
 
   return (
-    // <div className="d-flex justify-content-center text-center">
-       <div className={`d-flex justify-content-center text-center ${theme === 'dark' ? 'dark' : ''}`}>
-
-       <div className={` ${theme === 'dark' ? 'dark' : ''}`}>
-      {theme === 'light' ? (
-        <img src={logoImage} alt="Light Logo" className="logo" />
-      ) : (
-        <img src={darkLogoImage} alt="Dark Logo" className="logo" />
-      )}
+    <div
+      className={`d-flex justify-content-center text-center ${
+        theme === "dark" ? "dark" : ""
+      }`}
+    >
+      <div className={` ${theme === "dark" ? "dark" : ""}`}>
+        {theme === "light" ? (
+          <img src={logoImage} alt="Light Logo" className="logo" />
+        ) : (
+          <img src={darkLogoImage} alt="Dark Logo" className="logo" />
+        )}
       </div>
     </div>
   );

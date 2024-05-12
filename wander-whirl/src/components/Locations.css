@@ -1,11 +1,11 @@
 .locations-container {
-    padding-top: 1em; 
-    padding-left:15%;
-    padding-right:15%;
-    padding-bottom:3em; 
+  padding-top: 1em;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 3em;
 }
 
 .locations-container.dark {
-    background-color: #021124;
-    color:#D8C3A5;
+  background-color: #021124;
+  color: #d8c3a5;
 }

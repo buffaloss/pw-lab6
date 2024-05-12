@@ -1,96 +1,98 @@
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .popup.dark {
-   background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .popup-content {
-    background-color: #EAE7DC;
-    padding:20px;
-    border-radius: 8px;
-    position: relative;
-  }
-  
-  .popup-content.dark {
-    background-color: #021124;
-  }
+.popup.dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    color:#8E8D8A;
-  }
+.popup-content {
+  background-color: #eae7dc;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
 
-  form {
-    margin-top:2em;
-  }
+.popup-content.dark {
+  background-color: #021124;
+}
 
-  form.dark {
-    background-color: #021124;
-  }
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #8e8d8a;
+}
 
-  input, textarea {
-    min-width: 30em;
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-    border: 1px solid #D8C3A5;
-    border-radius: 4px;
-    box-sizing: border-box; 
-  }
-  
-  input.dark, textarea.dark {
-    background-color: #021124;
-    color:#D8C3A5;
-  }
+form {
+  margin-top: 2em;
+}
 
-  textarea {
-    min-height: 10em;
-  }
+form.dark {
+  background-color: #021124;
+}
 
-  .form-group {
-    margin-bottom: 1.5em;
-    text-align: center;
-  }
+input,
+textarea {
+  min-width: 30em;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #d8c3a5;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-  .form-group.dark {
-    background-color: #021124;
-    color:#D8C3A5
-  }
+input.dark,
+textarea.dark {
+  background-color: #021124;
+  color: #d8c3a5;
+}
 
-  label {
-    display: block;
-    margin-bottom: 0.5em; 
-    text-align: left;
-    font-weight: 500;
-  }
+textarea {
+  min-height: 10em;
+}
 
-  .submit-btn {
-    background-color: #E85A4F; 
-    color: #EAE7DC;
-    font-weight: 600; 
-    border: none;
-    border-radius: 7px;
-    padding: 2% 5%;
+.form-group {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.form-group.dark {
+  background-color: #021124;
+  color: #d8c3a5;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-weight: 500;
+}
+
+.submit-btn {
+  background-color: #e85a4f;
+  color: #eae7dc;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  padding: 2% 5%;
 }
 
 .submit-btn:hover {
-    background-color: #e94135;
+  background-color: #e94135;
 }
 
 .submit-btn.dark {
-    color: #021124;
+  color: #021124;
 }
