@@ -1,20 +1,20 @@
 .montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .light-mode {
-  --background-color: #EAE7DC;
+  --background-color: #eae7dc;
   --text-color: #021124;
 }
 
 .dark-mode {
   --background-color: #021124;
-  --text-color: #EAE7DC;
+  --text-color: #eae7dc;
 }
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 15%;
   background-color: var(--background-color);
   color: var(--text-color);
