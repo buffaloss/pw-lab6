@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pw-lab6/static/css/main.c79595ba.css",
+    "main.js": "/pw-lab6/static/js/main.7ab5519c.js",
+    "static/media/logo-dark.png": "/pw-lab6/static/media/logo-dark.38030dcd4fda7656ec81.png",
+    "static/media/logo.png": "/pw-lab6/static/media/logo.64265d93dab39a7d41f5.png",
+    "index.html": "/pw-lab6/index.html",
+    "main.c79595ba.css.map": "/pw-lab6/static/css/main.c79595ba.css.map",
+    "main.7ab5519c.js.map": "/pw-lab6/static/js/main.7ab5519c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c79595ba.css",
+    "static/js/main.7ab5519c.js"
+  ]
+}
