@@ -1,5 +1,5 @@
 .intro-container {
-    padding: 50px 20px;
+    padding: 50px 20px 0px 20px;
   }
   
   .intro-content {
@@ -10,7 +10,7 @@
   }
 
   .intro-content.dark {
-    color: #D8C3A5;
+    color: #EAE7DC;
   }
 
   .intro-content h2 {
@@ -38,7 +38,7 @@
   }
 
   .btn.dark {
-    color: #021124;
+    color: #EAE7DC;
   }
   
   .btn:hover {
@@ -47,5 +47,5 @@
   }
 
   .btn.dark:hover{
-    color: #021124;
+    color: #EAE7DC;
   }

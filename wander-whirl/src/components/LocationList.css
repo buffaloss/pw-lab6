@@ -21,9 +21,9 @@
 
   .location-item.dark {
     background-color: #021124; 
-    border: 2px solid #D8C3A5; 
+    border: 2px solid #EAE7DC; 
     box-shadow: 7px 7px 7px #d8c3a52d;
-    color: #D8C3A5; 
+    color: #EAE7DC; 
   }
 
   h6{
@@ -33,15 +33,3 @@
   .description {
     font-weight: 600;
   }
-
-  .description.dark {
-    color: #D8C3A5;
-  }
-
-  /* div#root {
-    background-color: #EAE7DC;
-  }
-  
-  div#root.dark {
-    background-color: #021124;
-  } */
