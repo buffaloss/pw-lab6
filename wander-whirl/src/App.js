@@ -16,19 +16,19 @@ function App() {
     setShowForm(false);
   };
 
+
   return (
     <ThemeProvider>
-      <Logo/>
-      <Header onShowForm={() => setShowForm(true)}/>
-      {showForm && (
-        <LocationForm
-          onSubmit={handleAddLocation}
-          onClose={() => setShowForm(false)}
-        />
-      )}
-      <Locations locations={locations} />
-
-      <ToggleButton/>
+        <Logo />
+        <Header onShowForm={() => setShowForm(true)} />
+        {showForm && (
+          <LocationForm
+            onSubmit={handleAddLocation}
+            onClose={() => setShowForm(false)}
+          />
+        )}
+        <Locations locations={locations} />
+        <ToggleButton />
     </ThemeProvider>
   );
 }

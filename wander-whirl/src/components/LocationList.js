@@ -15,7 +15,6 @@ function LocationList({ locations }) {
           <p>{location.description}</p>
         </div>
       ))}
-
     </div>
   );
 }

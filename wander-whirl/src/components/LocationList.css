@@ -21,8 +21,8 @@
 
   .location-item.dark {
     background-color: #021124; 
-    border: 2px solid #E85A4F; 
-    box-shadow: 7px 7px 7px #e8594f60;
+    border: 2px solid #D8C3A5; 
+    box-shadow: 7px 7px 7px #d8c3a52d;
     color: #D8C3A5; 
   }
 
@@ -37,3 +37,11 @@
   .description.dark {
     color: #D8C3A5;
   }
+
+  /* div#root {
+    background-color: #EAE7DC;
+  }
+  
+  div#root.dark {
+    background-color: #021124;
+  } */

@@ -1,0 +1,32 @@
+.btn-container {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.theme-btn {
+    background-color: #EAE7DC;
+    border: 3px solid #E85A4F;
+    border-radius: 5px;
+    padding:0.5% 1.5%;
+    color: #E85A4F;
+    font-weight: 600;
+  }
+
+  .theme-btn.dark {
+    background-color: #021124;
+    color: #e94135;
+  }
+  
+  .theme-btn:hover {
+    background-color: #EAE7DC;
+    color: #e94135;
+    border-color: #e94135;
+    border-width: 3.5px;
+    font-weight: 800;
+  }
+
+  .theme-btn.dark:hover{
+    background-color: #021124;
+    color: #e94135;
+  }
