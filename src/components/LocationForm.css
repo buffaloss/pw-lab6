@@ -44,7 +44,6 @@ form.dark {
 
 input,
 textarea {
-  min-width: 30em;
   width: 100%;
   padding: 0.5em;
   margin-bottom: 0.5em;
