@@ -1,0 +1,36 @@
+.location-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 35em));
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.location-list.dark {
+  background-color: #021124;
+  color: #d8c3a5;
+}
+
+.location-item {
+  background-color: none;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #d8c3a5;
+  box-shadow: 7px 7px 7px #d8c3a5b6;
+  color: #333;
+  overflow: hidden;
+}
+
+.location-item.dark {
+  background-color: #021124;
+  border: 2px solid #eae7dc;
+  box-shadow: 7px 7px 7px #d8c3a52d;
+  color: #eae7dc;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+.description {
+  font-weight: 600;
+}
