@@ -1,5 +1,5 @@
 .intro-container {
-    padding: 50px 20px;
+    padding: 50px 20px 0px 20px;
   }
   
   .intro-content {
@@ -8,12 +8,17 @@
     text-align: center;
     color: #E98074;
   }
-  
+
+  .intro-content.dark {
+    color: #EAE7DC;
+  }
+
   .intro-content h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
   }
+
   
   .intro-content p {
     font-size: 1.1rem;
@@ -31,13 +36,16 @@
     color: #EAE7DC;
     font-weight: 600;
   }
+
+  .btn.dark {
+    color: #EAE7DC;
+  }
   
   .btn:hover {
     background-color: #e94135;
     color: #EAE7DC;
   }
-  
-h3 {
-    text-align: left;
-    margin-top: 1em;
-}
+
+  .btn.dark:hover{
+    color: #EAE7DC;
+  }

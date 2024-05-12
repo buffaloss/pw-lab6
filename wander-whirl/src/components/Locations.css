@@ -1,6 +1,11 @@
 .locations-container {
-    margin-top: 1em; 
-    margin-left:15%;
-    margin-right:15%;
+    padding-top: 1em; 
+    padding-left:15%;
+    padding-right:15%;
+    padding-bottom:3em; 
 }
-  
+
+.locations-container.dark {
+    background-color: #021124;
+    color:#D8C3A5;
+}

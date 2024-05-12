@@ -9,6 +9,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  .popup.dark {
+   background-color: rgba(0, 0, 0, 0.5);
+  }
   
   .popup-content {
     background-color: #EAE7DC;
@@ -17,6 +21,10 @@
     position: relative;
   }
   
+  .popup-content.dark {
+    background-color: #021124;
+  }
+
   .close {
     position: absolute;
     top: 10px;
@@ -30,6 +38,10 @@
     margin-top:2em;
   }
 
+  form.dark {
+    background-color: #021124;
+  }
+
   input, textarea {
     min-width: 30em;
     width: 100%;
@@ -40,6 +52,11 @@
     box-sizing: border-box; 
   }
   
+  input.dark, textarea.dark {
+    background-color: #021124;
+    color:#D8C3A5;
+  }
+
   textarea {
     min-height: 10em;
   }
@@ -48,7 +65,12 @@
     margin-bottom: 1.5em;
     text-align: center;
   }
-  
+
+  .form-group.dark {
+    background-color: #021124;
+    color:#D8C3A5
+  }
+
   label {
     display: block;
     margin-bottom: 0.5em; 
@@ -67,4 +89,8 @@
 
 .submit-btn:hover {
     background-color: #e94135;
+}
+
+.submit-btn.dark {
+    color: #021124;
 }
