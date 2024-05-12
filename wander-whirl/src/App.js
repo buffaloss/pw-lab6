@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 import Logo from "./components/Logo";
 import Header from "./components/Header";
@@ -11,24 +11,30 @@ function App() {
   const [showForm, setShowForm] = useState(false);
   const [locations, setLocations] = useState([]);
 
+  const initialTheme = localStorage.getItem("appTheme") || "light";
+  const [theme, setTheme] = useState(initialTheme);
+
   const handleAddLocation = (locationData) => {
     setLocations([...locations, locationData]);
     setShowForm(false);
   };
 
+  useEffect(() => {
+    localStorage.setItem("appTheme", theme);
+  }, [theme]);
 
   return (
     <ThemeProvider>
-        <Logo />
-        <Header onShowForm={() => setShowForm(true)} />
-        {showForm && (
-          <LocationForm
-            onSubmit={handleAddLocation}
-            onClose={() => setShowForm(false)}
-          />
-        )}
-        <Locations locations={locations} />
-        <ToggleButton />
+      <Logo />
+      <Header onShowForm={() => setShowForm(true)} />
+      {showForm && (
+        <LocationForm
+          onSubmit={handleAddLocation}
+          onClose={() => setShowForm(false)}
+        />
+      )}
+      <Locations locations={locations} />
+      <ToggleButton />
     </ThemeProvider>
   );
 }
