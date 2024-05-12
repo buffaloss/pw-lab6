@@ -2,13 +2,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Light Mode */
 .light-mode {
   --background-color: #EAE7DC;
   --text-color: #021124;
 }
 
-/* Dark Mode */
 .dark-mode {
   --background-color: #021124;
   --text-color: #EAE7DC;
@@ -17,7 +15,6 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  /* background-color: #EAE7DC; */
   margin-bottom: 15%;
   background-color: var(--background-color);
   color: var(--text-color);

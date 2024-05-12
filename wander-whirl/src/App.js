@@ -14,14 +14,23 @@ function App() {
   const initialTheme = localStorage.getItem("appTheme") || "light";
   const [theme, setTheme] = useState(initialTheme);
 
-  const handleAddLocation = (locationData) => {
-    setLocations([...locations, locationData]);
-    setShowForm(false);
-  };
-
   useEffect(() => {
     localStorage.setItem("appTheme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    const savedLocations = JSON.parse(localStorage.getItem("locations"));
+    if (savedLocations) {
+      setLocations(savedLocations);
+    }
+  }, []);
+
+  const handleAddLocation = (locationData) => {
+    const updatedLocations = [...locations, locationData];
+    setLocations(updatedLocations);
+    localStorage.setItem("locations", JSON.stringify(updatedLocations));
+    setShowForm(false);
+  };
 
   return (
     <ThemeProvider>
