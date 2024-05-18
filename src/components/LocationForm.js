@@ -7,6 +7,7 @@ function LocationForm({ onSubmit, onClose }) {
     name: "",
     description: "",
     rating: "",
+    favourite: false,
   });
 
   const handleChange = (e) => {

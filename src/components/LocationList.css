@@ -27,6 +27,21 @@
   color: #eae7dc;
 }
 
+.location-title-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-title-section.dark {
+  color: #eae7dc;
+}
+
+.favorite-checkbox {
+  height: auto;
+  width: 2em;
+  display: flex;
+}
+
 h6 {
   font-weight: 600;
 }
