@@ -2,7 +2,7 @@ import React from "react";
 import "./LocationList.css";
 import { useTheme } from "../ThemeContext";
 
-function LocationList({ locations }) {
+function LocationList({ locations, handleFavorite }) {
   const { theme } = useTheme();
 
   return (
@@ -19,6 +19,7 @@ function LocationList({ locations }) {
               className="favorite-checkbox"
               id={"favorite-" + locationId}
               defaultChecked={locations[locationId].favourite}
+              onChange={() => handleFavorite(locationId)}
             />
           </section>
           <h6>Rating: {locations[locationId].rating} out of 5</h6>

@@ -33,6 +33,13 @@ function App() {
     localStorage.setItem("locationId", locationId + 1);
   };
 
+  const handleFavorite = (locationId) => {
+    const updatedLocations = { ...locations };
+    updatedLocations[locationId].favourite = !updatedLocations[locationId].favourite;
+    setLocations(updatedLocations);
+    localStorage.setItem("locations", JSON.stringify(updatedLocations));
+  };
+
   return (
     <ThemeProvider>
       <Logo />
@@ -43,7 +50,10 @@ function App() {
           onClose={() => setShowForm(false)}
         />
       )}
-      <Locations locations={locations} />
+      <Locations 
+        locations={locations} 
+        handleFavorite={handleFavorite}
+      />
       <ToggleButton />
     </ThemeProvider>
   );
