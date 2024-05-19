@@ -3,12 +3,15 @@ import "./Locations.css";
 import LocationList from "./LocationList";
 import { useTheme } from "../ThemeContext";
 
-function Locations({ locations }) {
+function Locations({ locations, handleFavorite }) {
   const { theme } = useTheme();
 
   return (
     <div className={`locations-container ${theme === "dark" ? "dark" : ""}`}>
-      <LocationList locations={locations} />
+      <LocationList 
+        locations={locations}
+        handleFavorite={handleFavorite} 
+      />
     </div>
   );
 }

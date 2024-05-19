@@ -9,7 +9,8 @@ import ToggleButton from "./components/ToggleButton";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
-  const [locations, setLocations] = useState([]);
+  const [locations, setLocations] = useState({});
+  const [locationId, setLocationId] = useState(localStorage.getItem("locationId") ? parseInt(localStorage.getItem("locationId")) : 0);
 
   const initialTheme = localStorage.getItem("appTheme") || "light";
   const [theme, setTheme] = useState(initialTheme);
@@ -26,10 +27,17 @@ function App() {
   }, []);
 
   const handleAddLocation = (locationData) => {
-    const updatedLocations = [...locations, locationData];
+    setLocations({...locations, [locationId]: locationData});
+    localStorage.setItem("locations", JSON.stringify({...locations, [locationId]: locationData}));
+    setLocationId(locationId + 1);
+    localStorage.setItem("locationId", locationId + 1);
+  };
+
+  const handleFavorite = (locationId) => {
+    const updatedLocations = { ...locations };
+    updatedLocations[locationId].favourite = !updatedLocations[locationId].favourite;
     setLocations(updatedLocations);
     localStorage.setItem("locations", JSON.stringify(updatedLocations));
-    setShowForm(false);
   };
 
   return (
@@ -42,7 +50,10 @@ function App() {
           onClose={() => setShowForm(false)}
         />
       )}
-      <Locations locations={locations} />
+      <Locations 
+        locations={locations} 
+        handleFavorite={handleFavorite}
+      />
       <ToggleButton />
     </ThemeProvider>
   );
